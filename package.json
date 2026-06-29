@@ -1,0 +1,28 @@
+{
+  "name": "proofra",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Proofra - milestone crowdfunding on Arc.",
+  "workspaces": [
+    "apps/web",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "dev": "npm --workspace @proofra/web run dev",
+    "build": "npm --workspaces --if-present run build",
+    "test": "npm --workspaces --if-present run test",
+    "lint": "npm --workspaces --if-present run lint",
+    "contracts:compile": "npm --workspace @proofra/contracts run compile",
+    "contracts:test": "npm --workspace @proofra/contracts run test",
+    "contracts:deploy:arc": "npm --workspace @proofra/contracts run deploy:arc"
+  },
+  "keywords": [
+    "arc",
+    "usdc",
+    "crowdfunding",
+    "escrow",
+    "solidity",
+    "evm"
+  ],
+  "license": "MIT"
+}
